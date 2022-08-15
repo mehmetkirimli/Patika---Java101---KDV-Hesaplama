@@ -1,0 +1,24 @@
+import java.util.Scanner ;
+
+public class Kdv {
+    public static void main(String[] args) {
+        //scanner inport edilecek -import java.util.Scanner ;
+        //değişkenler oluşturulacak
+        int tutar;
+        double kdv,kdv2;
+        //Scanner sınıfını tanımla
+        Scanner bjk = new Scanner(System.in);
+        //kullanıcıdan değer al
+        System.out.println("Tutar giriniz :");
+        tutar = bjk.nextInt();
+        System.out.println("Kdv'siz fiyat :" + tutar + "TL");
+        kdv = tutar * 1.18 ;
+        System.out.println("Kdv'li fiyat : " + kdv + "TL");
+        kdv2 = kdv-tutar ;
+        System.out.println("Yalnzzca kdv'nin fiyati :" + kdv2 + "TL");
+
+
+
+
+    }
+}
